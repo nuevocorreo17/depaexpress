@@ -4,6 +4,24 @@ class MY_Controller extends MX_Controller
 {
 	 public function __construct(){
         parent::__construct();
+
+        $this->estalogueado();
+    }
+
+    public function estalogueado()
+    {
+        if(!$this->session->userdata("logged_in"))
+        {
+           redirect("login");
+        }
+    }
+
+    public function chekarpermisos()
+    {
+        if()
+        {
+            
+        }
     }
 
 

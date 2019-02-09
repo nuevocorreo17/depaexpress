@@ -9,8 +9,18 @@ class Login_controller extends MY_Controller
 		parent::__construct();	
 	}
 
+	private function chekarlogin()
+	{
+		if($this->session->userdata("logged_in"))
+		{
+			redirect('dashboard');
+		}
+	}
+
 	public function index()
 	{
+		$this->chekarlogin();
+
 		$this->load->library('form_validation');
 
 		$config = array(
@@ -49,5 +59,12 @@ class Login_controller extends MY_Controller
 
 		$this->loadTemplates("login_view");
 	}
+
+	public function logout()
+    {
+        $this->session->unset_userdata("logged_in");
+        $this->session->sess_destroy();
+        redirect("web");
+    }
 }
 ?>
