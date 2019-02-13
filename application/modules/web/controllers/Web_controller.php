@@ -1,7 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Web_controller extends MY_Controller {
+class Web_controller extends MX_Controller
+{
 
 	public function __construct(){
 		parent::__construct();
@@ -9,6 +10,6 @@ class Web_controller extends MY_Controller {
 
 	public function index()
 	{
-		$this->loadTemplates("web_inicio");
+		$this->general->loadTemplates("web_inicio");
 	}
 }

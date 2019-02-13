@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class User_model extends CI_Model {
+class User_model extends CI_Model
 {
 
 	private $table = "depa_usuario";
@@ -24,7 +24,6 @@ class User_model extends CI_Model {
 		if($query->num_rows())
 		{
 			$row = $query->row_array();
-
 			if($row["password"] == sha1($password))
 			{
 				unset($row["password"]);
