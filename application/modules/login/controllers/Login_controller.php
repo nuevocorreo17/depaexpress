@@ -1,8 +1,7 @@
-<?php 
-
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login_controller extends MY_Controller
+class Login_controller extends MX_Controller  
 {
 	public function __construct()
 	{
@@ -57,8 +56,9 @@ class Login_controller extends MY_Controller
 			}
 		}
 
-		$this->loadTemplates("login_view");
+		$this->general->loadTemplates("login_view");
 	}
+
 
 	public function logout()
     {

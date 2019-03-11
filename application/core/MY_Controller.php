@@ -2,7 +2,9 @@
 
 class MY_Controller extends MX_Controller
 {
-	 public function __construct(){
+
+    public function __construct()
+    {
         parent::__construct();
 
         $this->estalogueado();
@@ -12,24 +14,19 @@ class MY_Controller extends MX_Controller
     {
         if(!$this->session->userdata("logged_in"))
         {
-           redirect("login");
+          redirect("login");
+        }else{
+            $accesos = is_array($this->accesos)? $this->accesos : explode(",", $this->accesos);
+
+            if(!in_array($this->session->userdata("perfil_id"), array_map("trim", $accesos)))
+            {
+                die("<h4>Acceso denegado</h4>");
+            }
         }
     }
 
-    public function chekarpermisos()
+    public function chekaraccesos()
     {
-        if()
-        {
-            
-        }
-    }
 
-
-    public function loadTemplates( $view, $data = array() )
-    {
-        $this->load->view("header",$data);
-        $this->load->view("menu",$data);   
-        $this->load->view( $view, $data);
-        $this->load->view("footer");
     }
 }
