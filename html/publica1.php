@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="col-12 col-xl-8 offset-xl-2 contenedor-pasos-tres">
 					<div class="row">
-						<div class="col-12 col-xl-4 columna-tipo tipo-1">
+						<div class="col-12  col-lg-4 col-xl-4 columna-tipo tipo-1">
 							<div class="contenedor-paso verde">
 								<div class="contenedor-paso-cabecera"></div>
 								<div class="contenedor-paso-cuerpo">
@@ -41,7 +41,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-xl-4 columna-tipo  tipo-2">
+						<div class="col-12  col-lg-4 col-xl-4 columna-tipo  tipo-2">
 							<div class="contenedor-paso naranja">
 								<div class="contenedor-paso-cabecera"></div>
 								<div class="contenedor-paso-cuerpo">
@@ -56,7 +56,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-xl-4 columna-tipo  tipo-3">
+						<div class="col-12  col-lg-4 col-xl-4 columna-tipo  tipo-3">
 							<div class="contenedor-paso azul">
 								<div class="contenedor-paso-cabecera"></div>
 								<div class="contenedor-paso-cuerpo">

@@ -225,6 +225,13 @@ input:focus{
 	transition: all ease-in .3s;
 }
 
+.boton.boton-reversa
+{
+	background-color: transparent;
+	color: #1dc440;
+	border-color: #1dc440;
+}
+
 
 .boton:hover
 {
@@ -267,9 +274,104 @@ input:focus{
 	border-color: #1dc440;
 }
 
+.pagination
+{
+	margin-bottom: 0;
+}
+
 .sin-margen-abajo
 {
 	margin-bottom: 0;
+}
+
+.navbar
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%
+
+}
+
+.navbar .item-login
+{
+	position: relative;
+}
+
+.navbar .item-login:before
+{
+	position: absolute;
+	width: 3px;
+	background-color: #fff;
+	height: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -1.5px;
+	content: "";
+}
+
+.navbar .item-login a.nav-link
+{
+	padding-right: 0;
+}
+
+.navbar .item-login a i
+{
+	margin-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+	color: #fff;
+	transition: all ease-in .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(29,196,64,.7);
+}
+
+.navbar-light .ambas-filas-menu
+{
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	display: flex;
+}
+
+.navbar-light .navbar-nav.fila-registro-login
+{
+    margin-bottom: 7.5px;
+}
+
+.navbar-light .navbar-nav.fila-registro-login .nav-link
+{
+	font-size: 12px;
+}
+
+.navbar-brand
+{
+	padding: 0;
+}
+
+
+
+.navbar-brand .logo
+{
+    width: 172px;
+    height: 84px;
+    margin-top: 15px;
+}
+
+.navbar-expand-lg .navbar-collapse
+{
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.dropdown-item
+{
+	color: #1dc440;
 }
 
 /**********************HOME********************************/
@@ -864,6 +966,7 @@ input:focus{
 .paso.modelo  .precio-principal p
 {
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .contenedor-paso
@@ -1076,3 +1179,269 @@ input:focus{
 	display: inline-block;
 }
 
+.piesdepagina
+{
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #192744;
+}
+
+.piesdepagina .fondo-azul
+{
+	padding-bottom: 30px;
+	padding-top: 30px;
+	background-color: #213455;
+}
+
+.piesdepagina .derechos-reservados
+{
+	font-size: 11px;
+	line-height: 1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.piesdepagina .widget 
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+
+
+.piesdepagina .widget a
+{
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.piesdepagina .widget a:hover
+{
+	text-decoration: underline;
+}
+
+.piesdepagina .widget .logo-inferior
+{
+	margin-bottom: 45px;
+}
+
+.piesdepagina .widget .logo-inferior img
+{
+    width: 172px;
+    height: 84px;	
+}
+
+.piesdepagina .widget.widget-redes a
+{
+	background-color: #fff;
+	border-radius: 100%;
+	line-height: 1;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: #213355;
+	font-size: 20px;
+	transition: all ease-in .3s;
+}
+
+.piesdepagina .widget.widget-redes a:hover
+{
+	opacity: .5;
+}
+
+@media (min-width: 1200px)
+{
+	.navbar-light .navbar-nav .nav-link {
+	 	padding-right: 20px;
+	    padding-left: 20px;
+	}
+}
+
+@media (max-width: 1199px)
+{
+	.bloque-ultimos-proyectos .columna-foto-ultimos
+	{
+		padding-bottom: 100%;
+		position: relative;
+	}
+
+	.bloque-ultimos-proyectos .columna-foto-ultimos .barra-imagen
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+	 	padding-right: 10px;
+	    padding-left: 10px;
+	}
+}
+
+@media (max-width: 991px)
+{
+	.banner-home
+	{
+		height: 100vh;
+	}
+
+	.navbar-brand .logo {
+		width: 103px; 
+		height: 50px;
+		margin-top: 15px;
+	}
+
+	.navbar .item-login:before {
+	  /*  display: none;*/
+	}
+
+	.navbar-expand-lg .navbar-collapse
+	{
+		text-align: center;
+	}
+
+	.navbar-light .ambas-filas-menu
+	{
+	    display: flex;
+	    flex-direction: column-reverse;
+	}
+
+	.navbar-expand-lg .navbar-collapse .boton.boton-reversa
+	{
+	    display: inline-block;
+	    margin-bottom: 30px;
+	    margin-top: .5rem;
+	}
+
+	.navbar-light .navbar-nav.fila-registro-login
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		margin-right: auto !important;
+		margin-left: auto !important;
+		margin-bottom: 15px;
+	}
+
+	.navbar-light .navbar-nav.fila-registro-login .nav-link
+	{
+		font-size: 14px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.navbar-light .navbar-nav.fila-items-menu
+	{
+	    margin-right: auto !important;
+	    margin-left: auto !important;
+	}
+
+	.contenedor-formulario #frmbusqueda .columna
+	{
+		margin-bottom: 15px;
+	}
+
+	.contenedor-formulario #frmbusqueda .columna:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.piesdepagina .fondo-azul
+	{
+		text-align: center;
+	}
+
+	.piesdepagina .widget .logo-inferior
+	{
+		margin-bottom: 30px;
+	}
+
+	.piesdepagina .widget.widget-redes {
+	    flex-direction: row;
+	    justify-content: center;
+	}
+
+	.piesdepagina .widget.widget-redes a{
+	    margin-bottom: 0;
+	    margin: 0 10px;
+	}
+
+
+	.paso .contenedor-pasos-tres .row .columna-tipo
+	{
+		margin-bottom: 30px;
+	}
+
+	.paso .contenedor-pasos-tres .row .columna-tipo:last-child
+	{
+		margin-bottom: 0;
+	}
+
+}
+
+@media (max-width: 767px)
+{
+	.asesoria .columna-asesoria
+	{
+		padding-left: 20px;
+	}
+
+	.paso.modelo .fila-previo .columna-detalle
+	{
+		padding-bottom: 40px;
+	}
+
+	.paso.modelo .fila-previo .columna-detalle .bloque-informacion,
+	.paso.modelo .fila-previo .columna-detalle .bloque-azul
+	{
+		text-align: center;
+	}
+
+	.paso.modelo .fila-previo .columna-detalle .caracteristica
+	{
+		justify-content: center;
+	}
+
+	.paso.modelo .fila-previo .columna-detalle .descripcion
+	{
+		text-align: center;
+	}
+
+	.paso.modelo .fila-previo .columna-detalle .columna-lista-logos,
+	.paso.modelo .fila-previo .columna-detalle .columna-lista-logos .lista-logos
+	{
+		justify-content: center;
+	}
+
+	.paso.modelo .fila-previo .columna-detalle .columna-lista-logos .lista-logos li
+	{
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+
+
+	.paso.modelo .fila-previo .columna-detalle .file-botones
+	{
+		/*text-align: center;*/
+	}
+
+	.paso.modelo .fila-previo .columna-detalle .file-botones a
+	{
+		/*margin-bottom: 15px;*/
+	}
+
+	.paso.modelo .fila-previo .columna-detalle .file-botones .boton
+	{
+		/*margin-bottom: 0;
+		display: inline-block;*/
+	}
+
+
+}
