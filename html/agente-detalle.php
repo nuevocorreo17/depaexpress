@@ -222,14 +222,14 @@
 		<div class="container contenedor-formulario">
 			<form id="frmbusqueda" method="POST" action="/">			
 				<div class="row">
-					<div class="col-12 col-lg-3 col-xl-3 columna">
+					<div class="col-12 col-sm-6 col-lg-3 col-xl-3 columna">
 						<select name="propiedad" class="form-control">
 							<option value="">Tipo de propiedad</option>
 							<option value="1">Departamento</option>
 							<option value="2">Casa</option>
 						</select>
 					</div>
-					<div class="col-12 col-lg-3  col-xl-3 columna">
+					<div class="col-12 col-sm-6 col-lg-3  col-xl-3 columna">
 						<select name="oferta" class="form-control">
 							<option value="">Tipo de oferta</option>
 							<option value="1">Alquiler</option>
@@ -237,14 +237,14 @@
 							<option value="3">Alquiler - Venta</option>
 						</select>						
 					</div>
-					<div class="col-12 col-lg-3  col-xl-3 columna">
+					<div class="col-12 col-sm-6 col-lg-3  col-xl-3 columna">
 						<select name="distrito" class="form-control">
 							<option value="">Seleccione su distrito</option>
 							<option value="1">Ancón</option>
 							<option value="2">Carabayllo</option>
 						</select>						
 					</div>
-					<div class="col-12 col-lg-3  col-xl-3 columna">
+					<div class="col-12 col-sm-6 col-lg-3  col-xl-3 columna">
 						<a href="#" class="boton">BÚSQUEDA AVANZADA</a>
 					</div>
 				</div>
