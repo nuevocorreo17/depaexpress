@@ -38,6 +38,118 @@
 				</div>
 			</div>
 		</footer>
+		<div class="trama"></div>
+		<div class="container accesos accesos-login">
+			<div class="col-12 col-lg-8 offset-lg-2">
+				<div class="row">
+					<div class="col-5">
+						<div class="row">
+							<div class="col-12">
+								<h2 class="titulo-letra-azul">INGRESA AQUí</h2>
+								<p>O bien, <a href="#">crea una cuenta</a></p>
+							</div>
+						</div>
+						<form>
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Email:" class="form-control">
+								<i class="far fa-envelope"></i>
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Contraseña:" class="form-control">
+								<i class="fas fa-shield-alt"></i>
+							</div>
+							<div class="form-group centradp-check">
+							    <div class="form-check">
+							      <input class="form-check-input" type="checkbox" selected>
+							      <label class="form-check-label" for="gridCheck">
+							        Recordar mi cuenta
+							      </label>
+							    </div>
+							</div>
+							<div class="form-group">
+								<input type="submit" name="btn-ingresar" value="INGRESAR" class="boton">
+							</div>
+						</form>
+						<div class="row">
+							<div class="col-12">
+								<a href="#"><span class="bolita-pregunta">?</span>¿Olvidaste tu contraseña? Haz click aquí</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-7 columna-imagen-form">
+						<img src="assets/img/imagen-form-login.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container accesos accesos-registro">
+			<div class="col-12 col-lg-8 offset-lg-2">
+				<div class="row">
+					<div class="col-5">
+						<div class="row">
+							<div class="col-12">
+								<h2 class="titulo-letra-azul">crea una cuenta</h2>
+								<p>O bien, <a href="#">ingresa aquí</a></p>
+							</div>
+						</div>
+						<form>
+							<div class="form-group">
+								<input type="text" name="nombres" placeholder="Nombres:" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Email:" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Contraseña:" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="password" name="repassword" placeholder="Repetir Contraseña:" class="form-control">
+							</div>										
+							<div class="form-group centradp-check">
+							    <div class="form-check">
+							      <input class="form-check-input" type="checkbox" selected>
+							      <label class="form-check-label" for="gridCheck">
+							        Acepto los terminos y condiciones
+							      </label>
+							    </div>
+							</div>
+							<div class="form-group">
+								<input type="submit" name="btn-ingresar" class="boton" value="CREA UNA CUENTA">
+							</div>
+						</form>
+					</div>
+					<div class="col-7 columna-imagen-form">
+						<img src="assets/img/imagen-form-registro.jpg">
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container accesos accesos-recuperar">
+			<div class="col-12 col-lg-8 offset-lg-2">
+				<div class="row">
+					<div class="col-5">
+						<div class="row">
+							<div class="col-12">
+								<h2 class="titulo-letra-azul">¿CAMBIAR<br>SU CONTRASEÑA?</h2>
+								<p>Introduce tu dirección de correo electrónico</p>
+							</div>
+						</div>
+						<form>
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Email:" class="form-control">
+								<i class="far fa-envelope"></i>
+							</div>
+							<div class="form-group">
+								<input type="submit" name="btn-ingresar" class="boton" value="ENVIAR">
+							</div>
+						</form>						
+					</div>
+					<div class="col-7 columna-imagen-form">
+						<img src="assets/img/imagen-form-recuperar.jpg">
+					</div>
+				</div>
+			</div>
+		</div>			
 		<script src="assets/js/jquery.js"></script>
 		<script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>	
