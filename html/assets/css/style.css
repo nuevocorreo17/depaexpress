@@ -202,7 +202,9 @@ input:focus{
 
 .form-control
 {
-	font-size: 18px;
+	font-size: 15px;
+	padding: 8.5px 20px;
+	height: 46px;
 }
 
 .form-control:focus
@@ -213,16 +215,36 @@ input:focus{
 
 .boton
 {
-	background-color: #1dc440;
-	border: 1px solid #1dc440;
-	text-align: center;
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: .375rem 20px;
-	display: block;
-	border-radius: 100px;
-	transition: all ease-in .3s;
+    background-color: #1dc440;
+    border: 1px solid #1dc440;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8.5px 20px;
+    display: block;
+    border-radius: 100px;
+    transition: all ease-in .3s;
+    font-size: 18px;
+}
+
+.boton.boton-reversa
+{
+	background-color: transparent;
+	color: #1dc440;
+	border-color: #1dc440;
+}
+
+.nav-item .boton.boton-reversa
+{
+    height: 30px;
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton.boton-reversa
@@ -322,6 +344,7 @@ input:focus{
 .navbar-light .navbar-nav .nav-link
 {
 	color: #fff;
+	line-height: 1;
 	transition: all ease-in .3s;
 }
 
@@ -1280,6 +1303,16 @@ input:focus{
 	 	padding-right: 10px;
 	    padding-left: 10px;
 	}
+
+	.boton
+	{
+		font-size: 14px;
+	}
+
+	.form-control {
+	    font-size: 14px;
+	    height: 40px;
+	}
 }
 
 @media (max-width: 991px)
@@ -1312,7 +1345,7 @@ input:focus{
 
 	.navbar-expand-lg .navbar-collapse .boton.boton-reversa
 	{
-	    display: inline-block;
+	    display: inline-flex;
 	    margin-bottom: 30px;
 	    margin-top: .5rem;
 	}
