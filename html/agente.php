@@ -18,7 +18,7 @@
 	<section class="seccion lista-agentes">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6 col-lg-4  col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -28,7 +28,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6 col-lg-4    col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -38,7 +38,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6 col-lg-4    col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -48,7 +48,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6 col-lg-4    col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -58,7 +58,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6 col-lg-4    col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -68,7 +68,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6 col-lg-4    col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -78,7 +78,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6 col-lg-4   col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -88,7 +88,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6  col-lg-4  col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">
@@ -98,7 +98,7 @@
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4 columna-contenedor-agente">
+				<div class="col-12  col-sm-6  col-lg-4  col-xl-4 columna-contenedor-agente">
 					<div class="contenedor-agente">
 						<div class="fila-imagen-agente">
 							<img src="assets/img/cara.jpg">

@@ -51,14 +51,14 @@
 			</div>
 			<form id="frmbusqueda" method="POST" action="/">			
 				<div class="row">
-					<div class="col-12 col-xl-3 columna">
+					<div class="col-12 col-lg-3 col-xl-3 columna">
 						<select name="propiedad" class="form-control">
 							<option value="">Tipo de propiedad</option>
 							<option value="1">Departamento</option>
 							<option value="2">Casa</option>
 						</select>
 					</div>
-					<div class="col-12 col-xl-3 columna">
+					<div class="col-12 col-lg-3 col-xl-3 columna">
 						<select name="oferta" class="form-control">
 							<option value="">Tipo de oferta</option>
 							<option value="1">Alquiler</option>
@@ -66,14 +66,14 @@
 							<option value="3">Alquiler - Venta</option>
 						</select>						
 					</div>
-					<div class="col-12 col-xl-3 columna">
+					<div class="col-12 col-lg-3 col-xl-3 columna">
 						<select name="distrito" class="form-control">
 							<option value="">Seleccione su distrito</option>
 							<option value="1">Ancón</option>
 							<option value="2">Carabayllo</option>
 						</select>						
 					</div>
-					<div class="col-12 col-xl-3 columna">
+					<div class="col-12 col-lg-3 col-xl-3 columna">
 						<a href="#" class="boton">BÚSQUEDA AVANZADA</a>
 					</div>
 				</div>
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 col-xl-4">
+				<div class="col-12  col-sm-6  col-xl-4">
 					<h3 class="masvistos-subtitulo">VENTAS</h3>
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
@@ -99,7 +99,7 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-7 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-7 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato">0</span></li>
@@ -107,7 +107,7 @@
 										<li><i class="fas fa-warehouse"></i><span class="dato">0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-5 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-5 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">000.00 m2</p>
 									<h4 class="precio">US$000</h4>
 								</div>
@@ -123,7 +123,7 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-7 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-7 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato">0</span></li>
@@ -131,7 +131,7 @@
 										<li><i class="fas fa-warehouse"></i><span class="dato">0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-5 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-5 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">000.00 m2</p>
 									<h4 class="precio">US$000</h4>
 								</div>
@@ -147,7 +147,7 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-7 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-7 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato">0</span></li>
@@ -155,7 +155,7 @@
 										<li><i class="fas fa-warehouse"></i><span class="dato">0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-5 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-5 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">000.00 m2</p>
 									<h4 class="precio">US$000</h4>
 								</div>
@@ -163,7 +163,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-xl-4">
+				<div class="col-12  col-sm-6  col-xl-4">
 					<h3 class="masvistos-subtitulo">ALQUILER</h3>
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
@@ -174,7 +174,7 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-7 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-7 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato">0</span></li>
@@ -182,7 +182,7 @@
 										<li><i class="fas fa-warehouse"></i><span class="dato">0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-5 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-5 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">000.00 m2</p>
 									<h4 class="precio">US$000</h4>
 								</div>
@@ -198,7 +198,7 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-7 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-7 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato">0</span></li>
@@ -206,7 +206,7 @@
 										<li><i class="fas fa-warehouse"></i><span class="dato">0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-5 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-5 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">000.00 m2</p>
 									<h4 class="precio">US$000</h4>
 								</div>
@@ -222,7 +222,7 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-7 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-7 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato">0</span></li>
@@ -230,7 +230,7 @@
 										<li><i class="fas fa-warehouse"></i><span class="dato">0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-5 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-5 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">000.00 m2</p>
 									<h4 class="precio">US$000</h4>
 								</div>
@@ -238,7 +238,7 @@
 						</div>
 					</div>					
 				</div>
-				<div class="col-12 col-xl-4">
+				<div class="col-12  col-sm-6  col-xl-4">
 					<h3 class="masvistos-subtitulo">PROYECTOS</h3>
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
@@ -249,14 +249,14 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-6 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-6 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato"> 0 a 0 Dorm.</span></li>
 										<li><i class="fas fa-shower"></i><span class="dato">0 a 0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-6 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-6 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">00.00 - 00.00 m2</p>
 									<h4 class="precio">Desde S/ 000,000</h4>
 								</div>
@@ -272,14 +272,14 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-6 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-6 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato"> 0 a 0 Dorm.</span></li>
 										<li><i class="fas fa-shower"></i><span class="dato">0 a 0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-6 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-6 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">00.00 - 00.00 m2</p>
 									<h4 class="precio">Desde S/ 000,000</h4>
 								</div>
@@ -295,14 +295,14 @@
 						</div>
 						<div class="contenedor-proyecto-pie">
 							<div class="row">
-								<div class="col-12 col-xl-6 contenedor-proyecto-pie-izquierdo">
+								<div class="col-7 col-xl-6 contenedor-proyecto-pie-izquierdo">
 									<h4 class="distrito"><i class="fas fa-map-marker-alt"></i> DISTRITO</h4>
 									<ul class="caracteristica">
 										<li><i class="fas fa-bed"></i><span class="dato"> 0 a 0 Dorm.</span></li>
 										<li><i class="fas fa-shower"></i><span class="dato">0 a 0</span></li>
 									</ul>
 								</div>
-								<div class="col-12 col-xl-6 contenedor-proyecto-pie-derecha text-right">
+								<div class="col-5 col-xl-6 contenedor-proyecto-pie-derecha text-right">
 									<p class="metros">00.00 - 00.00 m2</p>
 									<h4 class="precio">Desde S/ 000,000</h4>
 								</div>
@@ -318,10 +318,10 @@
 			<div class="row">
 				<div class="col-12 col-xl-8 offset-xl-2">
 					<div class="row">
-						<div class="col-12 col-xl-5 sin-padding-izquierda">
+						<div class="col-12  col-sm-5  col-xl-5 sin-padding-izquierda d-none d-sm-none d-md-block">
 							<img src="assets/img/asesora.png" class="img-fluid">
 						</div>
-						<div class="col-12 col-xl-7 columna-asesoria">
+						<div class="col-12  col-sm-7  col-xl-7 columna-asesoria">
 							<h3>ASESORÍA</h3>
 							<h2>SU AGENTE PERSONA 24/7</h2>
 							<p>¿BUSCAS HIPOTECA? CONSULTA A UN ASESOR HIPOTECARIO AQUÍ</p>
@@ -340,7 +340,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 col-xl-6">
+				<div class="col-12 col-sm-6 col-xl-6">
 					<div class="bloque-ultimos-proyectos">
 						<div class="col-12 col-xl-4 columna-foto-ultimos">
 							<img src="assets/img/proyecto1.png" class="barra-imagen">
@@ -357,7 +357,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-xl-6">
+				<div class="col-12 col-sm-6 col-xl-6">
 					<div class="bloque-ultimos-proyectos">
 						<div class="col-12 col-xl-4 columna-foto-ultimos">
 							<img src="assets/img/proyecto1.png" class="barra-imagen">
