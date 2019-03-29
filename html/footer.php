@@ -40,21 +40,22 @@
 		</footer>
 		<div class="trama"></div>
 		<div class="container accesos accesos-login">
-			<div class="col-12 col-lg-8 offset-lg-2">
+			<div class="col-12 col-lg-10 offset-lg-1">
+				<a href="#" class="accesos-cerrar"><i class="fas fa-times"></i></a>		
 				<div class="row">
-					<div class="col-5">
+					<div class="col-12 col-sm-5 cuerpo-form">
 						<div class="row">
 							<div class="col-12">
 								<h2 class="titulo-letra-azul">INGRESA AQUí</h2>
-								<p>O bien, <a href="#">crea una cuenta</a></p>
+								<p>O bien, <a href="#" class="btn-registro">crea una cuenta</a></p>
 							</div>
 						</div>
 						<form>
-							<div class="form-group">
+							<div class="form-group form-group-icono">
 								<input type="email" name="email" placeholder="Email:" class="form-control">
 								<i class="far fa-envelope"></i>
 							</div>
-							<div class="form-group">
+							<div class="form-group form-group-icono">
 								<input type="password" name="password" placeholder="Contraseña:" class="form-control">
 								<i class="fas fa-shield-alt"></i>
 							</div>
@@ -72,24 +73,25 @@
 						</form>
 						<div class="row">
 							<div class="col-12">
-								<a href="#"><span class="bolita-pregunta">?</span>¿Olvidaste tu contraseña? Haz click aquí</a>
+								<a href="#" class="btn-olvidar-pass enlace-gris"><span class="bolita-pregunta">?</span>¿Olvidaste tu contraseña? Haz click aquí</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-7 columna-imagen-form">
+					<div class="col-7 d-none d-sm-block columna-imagen-form">
 						<img src="assets/img/imagen-form-login.jpg">
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container accesos accesos-registro">
-			<div class="col-12 col-lg-8 offset-lg-2">
+			<div class="col-12 col-lg-10 offset-lg-1">
+				<a href="#" class="accesos-cerrar"><i class="fas fa-times"></i></a>				
 				<div class="row">
-					<div class="col-5">
+					<div class="col-12 col-sm-5 cuerpo-form">
 						<div class="row">
 							<div class="col-12">
 								<h2 class="titulo-letra-azul">crea una cuenta</h2>
-								<p>O bien, <a href="#">ingresa aquí</a></p>
+								<p>O bien, <a href="#" class="btn-login">ingresa aquí</a></p>
 							</div>
 						</div>
 						<form>
@@ -118,16 +120,17 @@
 							</div>
 						</form>
 					</div>
-					<div class="col-7 columna-imagen-form">
+					<div class="col-7 d-none d-sm-block columna-imagen-form">
 						<img src="assets/img/imagen-form-registro.jpg">
 					</div>
 				</div>
 			</div>
 		</div>	
 		<div class="container accesos accesos-recuperar">
-			<div class="col-12 col-lg-8 offset-lg-2">
+			<div class="col-12 col-lg-10 offset-lg-1">
+				<a href="#" class="accesos-cerrar"><i class="fas fa-times"></i></a>
 				<div class="row">
-					<div class="col-5">
+					<div class="col-12 col-sm-5 cuerpo-form">
 						<div class="row">
 							<div class="col-12">
 								<h2 class="titulo-letra-azul">¿CAMBIAR<br>SU CONTRASEÑA?</h2>
@@ -137,14 +140,13 @@
 						<form>
 							<div class="form-group">
 								<input type="email" name="email" placeholder="Email:" class="form-control">
-								<i class="far fa-envelope"></i>
 							</div>
 							<div class="form-group">
 								<input type="submit" name="btn-ingresar" class="boton" value="ENVIAR">
 							</div>
 						</form>						
 					</div>
-					<div class="col-7 columna-imagen-form">
+					<div class="col-7 d-none d-sm-block columna-imagen-form">
 						<img src="assets/img/imagen-form-recuperar.jpg">
 					</div>
 				</div>

@@ -68,7 +68,140 @@ section.seccion-login > .container
 	height: 100%;
 }
 
+.trama
+{
+	display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    background-color: rgba(0,0,0,0.80);
+}
 
+.container.accesos
+{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	z-index: 9999;
+}
+
+.container.accesos .accesos-cerrar
+{
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 2;
+	font-size: 20px;
+}
+
+
+.container.accesos .columna-imagen-form
+{
+	padding: 0;
+}
+
+.container.accesos .columna-imagen-form img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.container.accesos  .cuerpo-form
+{
+    background-color: #fff;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container.accesos .cuerpo-form a
+{
+	color: #2895f1;
+}
+
+.container.accesos .cuerpo-form .enlace-gris
+{
+	color: #999999;
+	text-decoration: underline;
+	margin-top: 15px;
+}
+
+.container.accesos .cuerpo-form .enlace-gris .bolita-pregunta
+{
+	border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    background-color: #999999;
+    color: #fff;
+    display: inline-flex;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.accesos .boton
+{
+    display: inline-flex;
+    font-size: 11px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 1;
+    padding: 5px 30px;
+}
+
+.container.accesos .form-group
+{
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.container.accesos .form-group:last-child
+{
+	margin-bottom: 0;
+}
+
+
+.container.accesos .form-group .form-control
+{
+	height: 30px;
+	font-size: 12px;
+    border-radius: 100px;	
+}
+
+
+.container.accesos .form-group.form-group-icono .form-control
+{
+    padding-right: 35px;
+}
+
+.container.accesos .form-group.form-group-icono .form-control ~ i
+{
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	font-size: 16px;
+}
+
+.container.accesos h2.titulo-letra-azul
+{
+	line-height: 1.3;
+	margin-bottom: 18px;
+}
 
 .card{
 	min-height: 370px;
@@ -169,13 +302,14 @@ input:focus{
 {
 	padding-left: 20px;
 	padding-right: 20px;
+    position: relative;	
 }
 
 .cabecera
 {
 	position: fixed;
 	width: 100%;
-	z-index: 9;
+	z-index: 20;
 	background-color: rgba(35,54,89,.9);
 	top: 0;
 	left: 0;
@@ -314,6 +448,8 @@ input:focus{
 
 }
 
+
+
 .navbar .item-login
 {
 	position: relative;
@@ -339,6 +475,12 @@ input:focus{
 .navbar .item-login a i
 {
 	margin-left: 10px;
+}
+
+.navbar-light .navbar-toggler
+{
+	font-size: 30px;
+	color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link
@@ -1476,5 +1618,11 @@ input:focus{
 		display: inline-block;*/
 	}
 
+	.container.accesos .accesos-cerrar
+	{
+		color: #000;
+		top: 10px;
+		right: 10px;		
+	}
 
 }
