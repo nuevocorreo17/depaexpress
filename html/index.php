@@ -325,7 +325,7 @@
 							<h3>ASESORÍA</h3>
 							<h2>SU AGENTE PERSONA 24/7</h2>
 							<p>¿BUSCAS HIPOTECA? CONSULTA A UN ASESOR HIPOTECARIO AQUÍ</p>
-							<a href="agentes.php" class="boton">WHATSAPP DE AGENTES</a>
+							<a href="agentes.php" class="boton boton-small">WHATSAPP DE AGENTES</a>
 						</div>
 					</div>
 				</div>

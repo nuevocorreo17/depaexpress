@@ -27,4 +27,17 @@ jQuery(document).ready(function(){
 		jQuery(".container.accesos.accesos-recuperar").fadeIn("slow");				
 	});	
 
+	jQuery(".acordion-busqueda h3").click(function(){
+		jQuery(this).toggleClass("activo");
+		jQuery(this).next(".conjunto-fila-acordion").toggleClass("activo");
+	});
+
+	jQuery(".abrir-busqueda").click(function(){
+		jQuery(".columna-buscador").addClass("abierto");
+	});
+
+	jQuery(".cerrar-busqueda").click(function(){
+		jQuery(".columna-buscador").removeClass("abierto");
+	});	
+
 });

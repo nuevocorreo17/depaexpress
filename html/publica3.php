@@ -72,7 +72,7 @@
 											<a href="#" class="link">ver planos</a>
 										</div>
 										<div class="col-6  col-sm-4  offset-sm-4 col-xl-4 offset-xl-4">
-											<a href="#" class="boton">contactar</a>
+											<a href="#" class="boton boton-small">contactar</a>
 										</div>
 									</div>	
 								</div>
@@ -81,7 +81,7 @@
 					</div>
 					<div class="row centrado">
 						<div class="col-12  text-center">
-							<a href="#" class="boton">PUBLICAR</a>
+							<a href="#" class="boton boton-small">PUBLICAR</a>
 						</div>
 					</div>
 				</div>

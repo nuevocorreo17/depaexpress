@@ -10,7 +10,7 @@
 			<div class="row">
 				<div class="col-12 col-xl-6 offset-xl-3 text-center">
 					<h1>Agentes Inmobiliarios</h1>
-					<a href="#" class="boton">PUBLICA TU INMUEBLE</a>
+					<a href="#" class="boton boton-small">PUBLICA TU INMUEBLE</a>
 				</div>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -34,7 +34,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -64,7 +64,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -84,7 +84,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -94,7 +94,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>
@@ -104,7 +104,7 @@
 							<img src="assets/img/cara.jpg">
 						</div>
 						<h4 class="titulo-letra-azul">Cecilia Salas Marin</h4>
-						<a href="#" class="boton">Contactar agente</a>
+						<a href="#" class="boton boton-small">Contactar agente</a>
 						<p><i class="fas fa-map-marker-alt"></i>78 proyectos publicados</p>
 					</div>
 				</div>									

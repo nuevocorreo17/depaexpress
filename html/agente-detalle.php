@@ -10,7 +10,7 @@
 			<div class="row">
 				<div class="col-12 col-xl-6 offset-xl-3 text-center">
 					<h1>Agentes Inmobiliarios</h1>
-					<a href="#" class="boton">PUBLICA TU INMUEBLE</a>
+					<a href="#" class="boton boton-small">PUBLICA TU INMUEBLE</a>
 				</div>
 			</div>
 		</div>
