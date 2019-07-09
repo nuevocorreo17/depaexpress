@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12  col-sm-6  col-xl-4">
+				<a href="#" class="proyecto-detalle col-12  col-sm-6  col-xl-4">
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
 							<h4>ESPACIO DEL TÍTULO</h4>
@@ -60,8 +60,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12  col-sm-6  col-xl-4">
+				</a>
+				<a href="#" class="proyecto-detalle col-12  col-sm-6  col-xl-4">
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
 							<h4>ESPACIO DEL TÍTULO</h4>
@@ -86,8 +86,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12  col-sm-6  col-xl-4">
+				</a>
+				<a href="#" class="proyecto-detalle col-12  col-sm-6  col-xl-4">
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
 							<h4>ESPACIO DEL TÍTULO</h4>
@@ -112,8 +112,8 @@
 							</div>
 						</div>
 					</div>
-				</div>	
-				<div class="col-12  col-sm-6  col-xl-4">
+				</a>	
+				<a href="#" class="proyecto-detalle col-12  col-sm-6  col-xl-4">
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
 							<h4>ESPACIO DEL TÍTULO</h4>
@@ -138,8 +138,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12  col-sm-6  col-xl-4">
+				</a>
+				<a href="#" class="proyecto-detalle col-12  col-sm-6  col-xl-4">
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
 							<h4>ESPACIO DEL TÍTULO</h4>
@@ -164,8 +164,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12  col-sm-6  col-xl-4">
+				</a>
+				<a href="#" class="proyecto-detalle col-12  col-sm-6  col-xl-4">
 					<div class="contenedor-proyecto">
 						<div class="contenedor-proyecto-cabecera">
 							<h4>ESPACIO DEL TÍTULO</h4>
@@ -190,7 +190,7 @@
 							</div>
 						</div>
 					</div>
-				</div>										
+				</a>										
 			</div>
 			<div class="row">
 				<div class="col-12">

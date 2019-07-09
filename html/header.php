@@ -44,7 +44,7 @@
 						        </div>
 						      </li>
 						      <li class="nav-item">
-						        <a class="nav-link" href="agentes.php" >AGENTES</a>
+						        <a class="nav-link" href="agente.php" >AGENTES</a>
 						      </li>
 						      <li class="nav-item">
 						        <a class="boton boton-reversa" href="publicar.php" >PUBLICAR ANUNCIO</a>

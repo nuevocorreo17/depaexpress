@@ -155,6 +155,7 @@
 		<script src="assets/js/jquery.js"></script>
 		<script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>	
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
 		<script src="assets/js/funciones.js"></script>
 	</body>
 </html>

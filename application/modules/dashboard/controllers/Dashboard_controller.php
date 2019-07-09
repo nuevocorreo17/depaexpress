@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Dashboard_controller extends MY_Controller
 {
 
-	protected $accesos = "1,2,3";
+	protected $accesos = "1,2,3,4";
 
     public function __construct()
 	{
@@ -15,7 +15,7 @@ class Dashboard_controller extends MY_Controller
 	public function index()
 	{
 
-		$this->loadTemplates("dashboard_inicio");
+		$this->general->loadTemplates("dashboard_inicio");
 	}
 }
 ?>

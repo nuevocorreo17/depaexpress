@@ -54,7 +54,7 @@ section.seccion
 }
 
 section.seccion-sinbanner {
-    padding-top: 7%;
+    padding-top: 145px;
     padding-bottom: 45px;
 }
 
@@ -374,6 +374,23 @@ input:focus{
 	border-color: #1dc440;
 }
 
+.boton.boton-naranja
+{
+    background-color: #f47920;
+    border: 1px solid #f47920;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 8.5px 40px;
+    font-weight: 700;
+}
+
+.boton.boton-naranja:hover
+{
+	color: #f47920;
+}
+
 .nav-item .boton.boton-reversa
 {
     height: 30px;
@@ -616,6 +633,18 @@ input:focus{
 	padding-left: 7.5px;
 }
 
+a.proyecto-detalle
+{
+	color: #848484;
+}
+
+a.proyecto-detalle-inactivo
+{
+	color: #848484;
+	opacity: .75;
+	filter: grayscale(1);
+}
+
 .contenedor-proyecto
 {
 	background-color: #fff;
@@ -724,7 +753,6 @@ input:focus{
 	color: #233659;
 	font-weight: 700;
 }
-
 
 .masvistos
 {
@@ -907,6 +935,8 @@ input:focus{
 	display: inline-block;
 }
 
+
+
 .lista-agentes
 {
 
@@ -939,6 +969,63 @@ input:focus{
     width: 100px;
     height: auto;
     border-radius: 100%;
+}
+
+.contenedor-agente .bloque-link
+{
+    text-align: center;
+}
+
+.contenedor-agente .bloque-link a
+{
+	display: inline-block;
+	color: #707070;
+	text-decoration: underline;
+}
+
+.contenedor-agente .bloque-botones
+{
+    margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contenedor-agente .bloque-botones .boton
+{
+	margin: 0 7.5px;
+}
+
+.contenedor-agente .bloque-botones .boton i
+{
+	margin-right: 7.5px;
+}
+
+.contenedor-agente .bloque-botones .boton.boton-azul
+{
+	margin: 0 7.5px;
+	background-color: #233659;
+	border-color: #233659;	
+	transition: all .3s ease-in;
+}
+
+.contenedor-agente .bloque-botones .boton.boton-azul:hover
+{
+	background-color: #fff;
+	color: #233659;	
+}
+
+.contenedor-agente .bloque-botones .boton.boton-azul.boton-azul-activo
+{
+	background-color: #f47920;	
+	border-color: #f47920;	
+}
+
+.contenedor-agente .bloque-botones .boton.boton-azul.boton-azul-activo:hover
+{
+	background-color: #fff;
+	color: #f47920;	
 }
 
 .contenedor-agente .titulo-letra-azul
@@ -1349,16 +1436,34 @@ input:focus{
 	background-color: #1dc440;
 }
 
+.contenedor-paso.verde .boton:hover
+{
+	background-color: #fff;	
+	color: #1dc440;
+}
+
 .contenedor-paso.naranja .boton
 {
 	background-color: #f47920;
 	border-color: #f47920;	
 }
 
+.contenedor-paso.naranja .boton:hover
+{
+	background-color: #fff;
+	color: #f47920;	
+}
+
 .contenedor-paso.azul .boton
 {
 	background-color: #1b365c;
 	border-color: #1b365c;	
+}
+
+.contenedor-paso.azul .boton:hover
+{
+	background-color: #fff;
+	color: #1b365c;	
 }
 
 .contenedor-paso .contenedor-paso-cabecera
@@ -1425,6 +1530,28 @@ input:focus{
 .contenedor-paso .contenedor-paso-cuerpo p
 {
     margin-bottom: 30px;
+}
+
+/********************ACTIVOS ESTADISTICAS*****************************/
+
+.activos-estadistica .contenedor-agente
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.activos-estadistica .contenedor-agente h4
+{
+	color: #213253;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: 700;
+}
+
+.activos-estadistica .contenedor-agente .boton
+{
+	font-size: 14px;
 }
 
 .piesdepagina
@@ -1594,6 +1721,98 @@ input:focus{
 .abrir-busqueda
 {
 	display: none
+}
+
+.columna-fondo-blanco,
+.container-fondo-blanco
+{
+	border: 1px solid #f0f0f0;
+	-webkit-box-shadow: 0px 0px 45px 0px rgba(240,240,240,0.5);
+	-moz-box-shadow: 0px 0px 45px 0px rgba(240,240,240,0.5);
+	box-shadow: 0px 0px 45px 0px rgba(240,240,240,0.5);
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: #fff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.container-fondo-blanco .fila-grafico
+{
+	margin-top: 45px;
+}
+
+.container-fondo-blanco .fila-grafico h4
+{
+    color: #213253;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.container-fondo-blanco .fila-grafico .bloque-contenedor-chartdiv
+{
+	position: relative;
+}
+
+.container-fondo-blanco .fila-grafico .bloque-contenedor-chartdiv #chartdiv
+{
+	width: 100%;
+	min-height: 450px;
+}
+
+.columna-pregunta h3
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 30px;    
+    margin-bottom: 15px;
+    position: relative;
+    color: #233659;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.columna-pregunta h3:first-child
+{
+	margin-top: 0;
+}
+
+.columna-pregunta p
+{
+	margin-bottom: 15px;
+}
+
+.columna-pregunta p:last-child
+{
+	margin-bottom: 0px;
+}
+
+.fila-formulario-registro 
+{
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.fila-formulario-registro .titulo-letra-azul
+{
+    margin-bottom: 30px;
+}
+
+.fila-formulario-registro .columna-campo-registro
+{
+    margin-bottom: 30px;
+}
+
+.fila-formulario-registro .columna-campo-registro.columna-precios
+{
+	text-align: center;
+}
+
+.fila-formulario-registro p
+{
+    font-size: 12px;
 }
 
 @media (min-width: 1200px)
