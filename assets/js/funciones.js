@@ -1,5 +1,7 @@
 jQuery(document).ready(function(){
 
+	jQuery("")
+
 	jQuery(".accesos-cerrar").click(function(e){
 		e.preventDefault();
 		jQuery(".trama").fadeOut("slow");

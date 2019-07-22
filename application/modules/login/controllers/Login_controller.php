@@ -18,7 +18,22 @@ class Login_controller extends MX_Controller
 
 	public function index()
 	{
-		$this->chekarlogin();
+		$result = array();
+
+		if (!$this->input->is_ajax_request()) 
+		{
+		   $this->chekarlogin();
+		}else{
+			if($this->session->userdata("logged_in"))
+			{
+				$result["rpta"] = 3;
+				$this->output->set_content_type('application/json');
+				$this->output->set_output(json_encode($result));
+				echo $this->output->get_output();
+				exit();
+			}
+		}
+		
 
 		$this->load->library('form_validation');
 
@@ -45,18 +60,28 @@ class Login_controller extends MX_Controller
 
 			if($status == ERR_INVALIDED_USERNAME)
 			{
-				$this->session->set_flashdata("error","Usuario inválido");
+				//$this->session->set_flashdata("error",);
+				$result["rpta"] = 2;
+				$result["mensaje"] = "Usuario inválido";
 			}else if($status == ERR_INVALIDED_PASSWORD)
 			{
-				$this->session->set_flashdata("error","Password inválido");
+				//$this->session->set_flashdata("error","Password inválido");
+				$result["rpta"] = 2;
+				$result["mensaje"] = "Password inválido";				
 			}else{
 				$this->session->set_userdata($this->user->get_data());
 				$this->session->set_userdata("logged_in", TRUE);
-				redirect("dashboard");
+				$result["rpta"] = 1;
+				$result["usuario"] = $this->user->get_data();	
+				//redirect("dashboard");
 			}
 		}
 
-		$this->general->loadTemplates("login_view");
+		$this->output->set_content_type('application/json');
+		$this->output->set_output(json_encode($result));
+		echo $this->output->get_output();
+		exit();
+
 	}
 
 

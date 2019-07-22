@@ -50,7 +50,7 @@
 								<p>O bien, <a href="#" class="btn-registro">crea una cuenta</a></p>
 							</div>
 						</div>
-						<form>
+						<?php echo form_open('',array('id'=>'frmlogin','method'=>'post',"onSubmit" => 'return false;'));?>
 							<div class="form-group form-group-icono">
 								<input type="email" name="email" placeholder="Email:" class="form-control">
 								<i class="far fa-envelope"></i>
@@ -70,7 +70,7 @@
 							<div class="form-group">
 								<input type="submit" name="btn-ingresar" value="INGRESAR" class="boton">
 							</div>
-						</form>
+						<?php echo form_close();?>
 						<div class="row">
 							<div class="col-12">
 								<a href="#" class="btn-olvidar-pass enlace-gris"><span class="bolita-pregunta">?</span>¿Olvidaste tu contraseña? Haz click aquí</a>
