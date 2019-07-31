@@ -23,8 +23,22 @@
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				  	<div class="ambas-filas-menu">
 						<ul class="navbar-nav ml-auto fila-registro-login">
-							<li class="nav-item"><a class="nav-link btn-registro"  href="#">REGÍSTRATE</a></li>
-							<li class="nav-item item-login"><a class="nav-link btn-login" href="#">INGRESA<i class="fas fa-user"></i></a></li>
+							<?php
+							if($this->session->userdata("logged_in"))
+							{
+							?>
+								<li class="nav-item">
+	        						<a class="nav-link" href="<?php echo base_url();?>perfil">
+	        							<?php echo $this->session->userdata('nombre')." ".$this->session->userdata('ape_pat');?>
+	        						</a>
+	        					</li>
+							<?php
+							}else{?>
+								<li class="nav-item"><a class="nav-link btn-registro"  href="#">REGÍSTRATE</a></li>
+								<li class="nav-item item-login"><a class="nav-link btn-login" href="#">INGRESA<i class="fas fa-user"></i></a></li>
+							<?php 
+							}
+							?>
 						</ul>
 					    <ul class="navbar-nav ml-auto fila-items-menu">
 					      <li class="nav-item">

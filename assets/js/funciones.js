@@ -1,31 +1,62 @@
 jQuery(document).ready(function(){
+	jQuery("#frmlogin .boton").click(function(){
 
-	jQuery("")
+		jQuery.ajax({
+	        url : URL+"login",
+    		dataType: 'json',
+	        type: 'POST',
+	        data : jQuery("#frmlogin").serialize(),
+	        success: function(data) {
+	        	console.log(data.rpta);
+
+	        	if(data.rpta == 1)
+	        	{
+	        		cerraraccesos();
+	        		jQuery(".fila-registro-login").html("");
+	        		var html = '<li class="nav-item">';
+	        		html+= '<a class="nav-link" href="'+URL+'perfil">';
+	        		html+=data.usuario.nombre+' '+data.usuario.ape_pat;
+	        		html+='</a></li>';
+	        		jQuery(".fila-registro-login").html(html);
+
+	        	}else if(data.rpta == 2)
+	        	{
+	        		jQuery(".contenedor-mensaje").html(mnesajeerror("alerta-login","<p>"+data.mensaje+"</p>"));
+	        	}else if(data.rpta == 3)
+	        	{
+	        		jQuery(".contenedor-mensaje").html(mnesajeerror("alerta-login",data.mensaje));
+	        	}else{
+	        		window.location.href = URL;
+	        	}
+	        	/*
+	            if (resp.status == "success")
+	                window.location.href = resp.redirect_url;
+	            else
+	                $('#error-msg').html('<div class="alert alert-danger">' + resp.message + '</div>');*/
+	        }
+	    });
+	});
 
 	jQuery(".accesos-cerrar").click(function(e){
 		e.preventDefault();
-		jQuery(".trama").fadeOut("slow");
-		jQuery(".container.accesos").fadeOut("slow");		
+		cerraraccesos();	
 	});
 
 	jQuery(".btn-registro").click(function(e){
 		e.preventDefault();
-		jQuery(".trama").fadeIn("slow");
-		jQuery(".container.accesos").fadeOut("slow");			
+		abriraccesos();	
 		jQuery(".container.accesos.accesos-registro").fadeIn("slow");		
 	});
 
 	jQuery(".btn-login").click(function(e){
 		e.preventDefault();
-		jQuery(".trama").fadeIn("slow");
-		jQuery(".container.accesos").fadeOut("slow");	
+		abriraccesos();
 		jQuery(".container.accesos.accesos-login").fadeIn("slow");				
 	});	
 
 	jQuery(".btn-olvidar-pass").click(function(e){
 		e.preventDefault();
-		jQuery(".trama").fadeIn("slow");
-		jQuery(".container.accesos").fadeOut("slow");	
+		abriraccesos();
 		jQuery(".container.accesos.accesos-recuperar").fadeIn("slow");				
 	});	
 
@@ -54,6 +85,34 @@ jQuery(window).resize(function(){
 		cargadocharts();
 	}
 });
+
+jQuery(document).on("click","#alerta-login .close",function(){
+    jQuery("#alerta-login").alert('close');
+});
+
+function mnesajeerror(id,mensaje)
+{
+	var html = '<div id="'+id+'" class="alert alert-danger alert-dismissible fade show" role="alert">';
+	html += '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+	html += '<span aria-hidden="true">&times;</span>';
+	html += '</button>';
+	html += '<div class="mensaje-login">'+mensaje+'</div>';
+	html += '</div>';
+
+	return html;
+}
+
+function cerraraccesos()
+{
+	jQuery(".trama").fadeOut("slow");
+	jQuery(".container.accesos").fadeOut("slow");	
+}
+
+function abriraccesos()
+{
+	jQuery(".trama").fadeIn("slow");
+	jQuery(".container.accesos").fadeOut("slow");	
+}
 
 function cargadocharts()
 {

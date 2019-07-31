@@ -26,7 +26,7 @@ class Login_controller extends MX_Controller
 		}else{
 			if($this->session->userdata("logged_in"))
 			{
-				$result["rpta"] = 3;
+				$result["rpta"] = 4;
 				$this->output->set_content_type('application/json');
 				$this->output->set_output(json_encode($result));
 				echo $this->output->get_output();
@@ -39,8 +39,8 @@ class Login_controller extends MX_Controller
 
 		$config = array(
 		    array(
-		            'field' => 'username',
-		            'label' => 'Username',
+		            'field' => 'email',
+		            'label' => 'Email',
 		            'rules' => 'trim|required|valid_email'
 		    ),
 		    array(
@@ -75,13 +75,17 @@ class Login_controller extends MX_Controller
 				$result["usuario"] = $this->user->get_data();	
 				//redirect("dashboard");
 			}
+		}else{
+			$result["rpta"] = 3;
+			$result["mensaje"] = validation_errors();	
 		}
+
+
 
 		$this->output->set_content_type('application/json');
 		$this->output->set_output(json_encode($result));
 		echo $this->output->get_output();
 		exit();
-
 	}
 
 

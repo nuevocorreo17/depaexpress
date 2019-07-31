@@ -50,18 +50,19 @@
 								<p>O bien, <a href="#" class="btn-registro">crea una cuenta</a></p>
 							</div>
 						</div>
+						<div class="contenedor-mensaje"></div>
 						<?php echo form_open('',array('id'=>'frmlogin','method'=>'post',"onSubmit" => 'return false;'));?>
 							<div class="form-group form-group-icono">
-								<input type="email" name="email" placeholder="Email:" class="form-control">
+								<input type="text" name="email" placeholder="Email:" class="form-control" required >
 								<i class="far fa-envelope"></i>
 							</div>
 							<div class="form-group form-group-icono">
-								<input type="password" name="password" placeholder="Contraseña:" class="form-control">
+								<input type="password" name="password" placeholder="Contraseña:" class="form-control" required>
 								<i class="fas fa-shield-alt"></i>
 							</div>
 							<div class="form-group centradp-check">
 							    <div class="form-check">
-							      <input class="form-check-input" type="checkbox" selected>
+							      <input class="form-check-input" name="remeber" type="checkbox" selected>
 							      <label class="form-check-label" for="gridCheck">
 							        Recordar mi cuenta
 							      </label>

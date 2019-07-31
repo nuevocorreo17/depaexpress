@@ -15,8 +15,9 @@ class User_model extends CI_Model
 
 	public function validate()
 	{
-		$username = $this->input->post("username");
+		$username = $this->input->post("email");
 		$password = $this->input->post("password");	
+		//$remeber = $this->input->post("remeber");			
 		
 		$this->db->where("email",$username);	
 		$query = $this->db->get($this->table);
