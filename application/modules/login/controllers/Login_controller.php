@@ -12,7 +12,7 @@ class Login_controller extends MX_Controller
 	{
 		if($this->session->userdata("logged_in"))
 		{
-			redirect('dashboard');
+			redirect('/');
 		}
 	}
 
@@ -46,7 +46,7 @@ class Login_controller extends MX_Controller
 		    array(
 		            'field' => 'password',
 		            'label' => 'Password',
-		            'rules' => 'trim|required',
+		            'rules' => 'min_length[8]|trim|required',
 		    ),
 		);
 
@@ -93,7 +93,7 @@ class Login_controller extends MX_Controller
     {
         $this->session->unset_userdata("logged_in");
         $this->session->sess_destroy();
-        redirect("web");
+        redirect("/");
     }
 }
 ?>

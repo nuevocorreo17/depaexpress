@@ -383,6 +383,7 @@ $config['encryption_key'] = 'QkDHQYfYNspmB6py5pri0Ltyj909Zz9F';
 |
 */
 $config['sess_driver'] = 'database';
+$config['sess_save_path'] = NULL;
 /*$config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;

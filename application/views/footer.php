@@ -86,7 +86,7 @@
 		</div>
 		<div class="container accesos accesos-registro">
 			<div class="col-12 col-lg-10 offset-lg-1">
-				<a href="#" class="accesos-cerrar"><i class="fas fa-times"></i></a>				
+				<a href="#" class="accesos-cerrar"><i class="fas fa-times"></i></a>	
 				<div class="row">
 					<div class="col-12 col-sm-5 cuerpo-form">
 						<div class="row">
@@ -95,9 +95,10 @@
 								<p>O bien, <a href="#" class="btn-login">ingresa aquí</a></p>
 							</div>
 						</div>
-						<form>
+						<div class="contenedor-mensaje"></div>
+						<?php echo form_open('',array('id'=>'frmregistro','method'=>'post',"onSubmit" => 'return false;'));?>
 							<div class="form-group">
-								<input type="text" name="nombres" placeholder="Nombres:" class="form-control">
+								<input type="text" name="nombre" placeholder="Nombre:" class="form-control">
 							</div>
 							<div class="form-group">
 								<input type="email" name="email" placeholder="Email:" class="form-control">
@@ -106,11 +107,11 @@
 								<input type="password" name="password" placeholder="Contraseña:" class="form-control">
 							</div>
 							<div class="form-group">
-								<input type="password" name="repassword" placeholder="Repetir Contraseña:" class="form-control">
+								<input type="password" name="confirm_password" placeholder="Repetir Contraseña:" class="form-control">
 							</div>										
 							<div class="form-group centradp-check">
 							    <div class="form-check">
-							      <input class="form-check-input" type="checkbox" selected>
+							      <input class="form-check-input" name="terminos" value="1" type="checkbox" >
 							      <label class="form-check-label" for="gridCheck">
 							        Acepto los terminos y condiciones
 							      </label>
@@ -119,7 +120,7 @@
 							<div class="form-group">
 								<input type="submit" name="btn-ingresar" class="boton" value="CREA UNA CUENTA">
 							</div>
-						</form>
+						<?php echo form_close();?>
 					</div>
 					<div class="col-7 d-none d-sm-block columna-imagen-form">
 						<img src="<?php echo base_url();?>assets/img/imagen-form-registro.jpg">
@@ -158,5 +159,6 @@
 		<script src="<?php echo base_url();?>assets/js/popper.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>	
 		<script src="<?php echo base_url();?>assets/js/funciones.js"></script>
+		<script src="<?php echo base_url();?>assets/lib/jqueryvalidate/jqueryvalidate.min.js"></script>		
 	</body>
 </html>

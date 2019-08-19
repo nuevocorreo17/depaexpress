@@ -29,9 +29,10 @@
 							?>
 								<li class="nav-item">
 	        						<a class="nav-link" href="<?php echo base_url();?>perfil">
-	        							<?php echo $this->session->userdata('nombre')." ".$this->session->userdata('ape_pat');?>
+	        							<?php echo $this->session->userdata('nombre');?>
 	        						</a>
 	        					</li>
+	        					<li class="nav-item"><a class="nav-link"  href="<?php echo base_url();?>logout">Cerrar Sessión</a></li>
 							<?php
 							}else{?>
 								<li class="nav-item"><a class="nav-link btn-registro"  href="#">REGÍSTRATE</a></li>

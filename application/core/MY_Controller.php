@@ -14,7 +14,7 @@ class MY_Controller extends MX_Controller
     {
         if(!$this->session->userdata("logged_in"))
         {
-          redirect("login");
+            redirect('/');
         }else{
             $accesos = is_array($this->accesos)? $this->accesos : explode(",", $this->accesos);
 

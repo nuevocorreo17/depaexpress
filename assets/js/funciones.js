@@ -15,27 +15,52 @@ jQuery(document).ready(function(){
 	        		jQuery(".fila-registro-login").html("");
 	        		var html = '<li class="nav-item">';
 	        		html+= '<a class="nav-link" href="'+URL+'perfil">';
-	        		html+=data.usuario.nombre+' '+data.usuario.ape_pat;
+	        		html+=data.usuario.nombre;
 	        		html+='</a></li>';
+
+	        		html+= '<li class="nav-item">';
+	        		html+= '<a class="nav-link" href="'+URL+'logout">';
+	        		html+="Cerrar Sessión";
+	        		html+='</a></li>';
+
 	        		jQuery(".fila-registro-login").html(html);
 
 	        	}else if(data.rpta == 2)
 	        	{
-	        		jQuery(".contenedor-mensaje").html(mnesajeerror("alerta-login","<p>"+data.mensaje+"</p>"));
+	        		jQuery(".accesos-login .contenedor-mensaje").html(mnesajeerror("alerta-login","<p>"+data.mensaje+"</p>"));
 	        	}else if(data.rpta == 3)
 	        	{
-	        		jQuery(".contenedor-mensaje").html(mnesajeerror("alerta-login",data.mensaje));
+	        		jQuery(".accesos-login .contenedor-mensaje").html(mnesajeerror("alerta-login",data.mensaje));
 	        	}else{
 	        		window.location.href = URL;
 	        	}
-	        	/*
-	            if (resp.status == "success")
-	                window.location.href = resp.redirect_url;
-	            else
-	                $('#error-msg').html('<div class="alert alert-danger">' + resp.message + '</div>');*/
 	        }
 	    });
 	});
+
+	jQuery("#frmregistro .boton").click(function(){
+
+		jQuery.ajax({
+	        url : URL+"registro",
+    		dataType: 'json',
+	        type: 'POST',
+	        data : jQuery("#frmregistro").serialize(),
+	        success: function(data) {
+	        	console.log(data.rpta);
+
+	        	if(data.rpta == 1)
+	        	{
+	        		window.location.href = URL+"perfil";
+	        	}else if(data.rpta == 3)
+	        	{
+	        		jQuery(".accesos-registro .contenedor-mensaje").html(mnesajeerror("alerta-login",data.mensaje));
+	        	}else{
+	        		window.location.href = URL;
+	        	}
+	        }
+	    });
+	});
+
 
 	jQuery(".accesos-cerrar").click(function(e){
 		e.preventDefault();
@@ -77,6 +102,50 @@ jQuery(document).ready(function(){
 	{
 		cargadocharts();
 	}
+
+	jQuery("#telefono,#nid").keypress(function(e) {
+        var r = e.keyCode || e.which;
+        return r > 45 && r < 65 || 8 == r
+    });
+
+
+	jQuery("#frmperfil").validate({
+		errorClass: 'text-danger',
+		rules: {
+			nombre: {
+				required: true,
+				minlength: 5
+			},
+			email:{
+				required: true,
+				email: true,
+			},
+			telefono: {
+				number: true,
+				maxlength: 12
+			},
+		},
+		messages: {
+			firstname: "Please enter your firstname",
+			lastname: "Please enter your lastname",
+			username: {
+				required: "Please enter a username",
+				minlength: "Your username must consist of at least 2 characters"
+			},
+			password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+			confirm_password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long",
+				equalTo: "Please enter the same password as above"
+			},
+			email: "Please enter a valid email address",
+			agree: "Please accept our policy",
+			topic: "Please select at least 2 topics"
+		}
+	});
 });
 
 jQuery(window).resize(function(){
